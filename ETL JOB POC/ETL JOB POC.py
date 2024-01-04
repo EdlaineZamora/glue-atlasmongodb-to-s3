@@ -110,7 +110,7 @@ for obj in bucket.objects.all():
         client.copy_object(
             Bucket=args['BUCKET_NAME'],
             CopySource=copy_source,
-            Key='{}/{}-{}.parquet'.format(args['PREFIX'], args['OUTPUT_FILENAME'], 'parquet'),
+            Key='{}/{}.parquet'.format(args['PREFIX'], args['OUTPUT_FILENAME']),
         )
         response = client.delete_object(
             Bucket=args['BUCKET_NAME'],
