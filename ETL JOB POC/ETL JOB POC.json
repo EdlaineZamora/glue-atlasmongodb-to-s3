@@ -13,12 +13,12 @@
   "defaultArguments" : {
     "--BUCKET_NAME" : "etl-poc-jan-24",
     "--COLLECTION_NAME" : "accounts",
+    "--OUTPUT_FILENAME" : "accounts",
     "--PREFIX" : "from-atlas",
     "--enable-glue-datacatalog" : "true",
     "--job-bookmark-option" : "job-bookmark-disable",
     "--TempDir" : "s3://aws-glue-assets-061725306395-us-east-2/temporary/",
     "--enable-metrics" : "true",
-    "--enable-spark-ui" : "true",
     "--REGION_NAME" : "us-east-2",
     "--spark-event-logs-path" : "s3://aws-glue-assets-061725306395-us-east-2/sparkHistoryLogs/",
     "--enable-job-insights" : "false",
