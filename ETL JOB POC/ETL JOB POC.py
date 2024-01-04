@@ -93,3 +93,4 @@ path = "s3://{}/{}".format(args['BUCKET_NAME'], args['PREFIX'])
 glueContext.write_dynamic_frame.from_options(ds, connection_type = "s3", connection_options={"path": path}, format="json")
 
 logger.info("written to S3!")
+logger.info("Versioned!")
